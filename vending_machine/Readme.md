@@ -16,4 +16,4 @@ characteristics:
 2. Each snack is stored in separate slot. There can be up to 10 units of snack stored in 1 slot.
 3. A buyer can purchase only 1 item at a time.
 4. The machine only accepts payment by card.
-5. ![alt text](https://github.com/ben-karim2014/verilog-projects/vending_machine/blob/vending1.jpg?raw=true)
+5. ![alt text](https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending1.jpg?raw=true)
