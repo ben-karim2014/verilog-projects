@@ -14,3 +14,6 @@ For this lab, we are required to design an FSM to model a parking meter which si
 being added and displays the appropriate time remaining. The time remaining will be displayed
 on a four-digit common anode seven-segment LED display on a Nexys3 board. Each of the four
 digits is composed of seven segments arranged in a pattern.
+
+vending Machine is designed to have the following inputs and outputs:
+<img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/basicio-img2.jpg" width="600">
