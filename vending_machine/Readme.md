@@ -17,3 +17,8 @@ characteristics:
 3. A buyer can purchase only 1 item at a time.
 4. The machine only accepts payment by card.
 5. ![alt text](https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending1.jpg?raw=true)
+
+3-Design Description:
+For this assignment, I designed my FSM following to the guidance of the lab description. The
+vending Machine is designed to have the following inputs and outputs:
+![alt text](https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending2.jpg?raw=true)
