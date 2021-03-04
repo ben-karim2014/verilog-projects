@@ -31,6 +31,7 @@ inputs:
 * rst2 : reset time to 150 seconds
 * clk : frequency 100HZ
 * rst : reset to initial state
+
 Outputs: 
 * led_seg(7-bit vector): displays the actual value fed to the 4 segments
 corresponding to the digits being displayed.
