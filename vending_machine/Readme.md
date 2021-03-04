@@ -22,3 +22,5 @@ characteristics:
 For this assignment, I designed my FSM following to the guidance of the lab description. The
 vending Machine is designed to have the following inputs and outputs:
 ![alt text](https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending2.jpg?raw=true)
+State Diagram:
+![alt text](https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/states.jpg?raw=true)
