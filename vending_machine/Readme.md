@@ -25,7 +25,7 @@ characteristics:
 For this assignment, I designed my FSM following to the guidance of the lab description. The
 vending Machine is designed to have the following inputs and outputs:
 ![alt text](https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending2.jpg?raw=true)
-# 4-State Diagram:
+# 4-State Diagram: (I used 11 states to manage all the vending machine operations)
 
 ![alt text](https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/states.jpg?raw=true)
 # 5-Descriptions of states and transitions:
@@ -33,31 +33,40 @@ vending Machine is designed to have the following inputs and outputs:
 In the RESET state all item counters and outputs are set to 0. The FSM transition to this state
 whenever RST input is set to 1. When RST is set to 0 the FSM transition to IDLE state in which
 the machine will be waiting for a transaction to start.
+
 When RELOAD input is set to 1 the FSM transition to the reload state where all snack items are
 set 10 modeling the reload of items’ stocks. When RELOAD is set to 0, the machine will
 transition to IDLE state to wait for a transition to start.
+
 In IDLE state, if the CARD_IN input is set to 1, the FSM will transition to Transaction Start state in
 which the machine would wait the first digit to be entered. If the first digit is not entered in 5
 clocks cycles the machine will return to IDLE state.
+
 If the first digit is entered, the machine would transition to the Select first Digit state in which it
 would wait for the second digit to be entered. If the second digit is not entered, the machine
 would transition to IDLE state.
+
 If the second digit is entered, the machine would transition to Select Second Digit state in which
 the machine would check if the two digits are valid and the stock of the chosen item is greater
 than 0.
 If the two digits are invalid (are not between 00 and 19) or the stock of the chosen item is equal
 to 0, then the machine would transition to Invalid Selection sate in which the INVALID_SEL
 output will be set to 1, and then the machine would transition to IDLE to wait for a new state.
+
 If the two digits are valid and there is enough in stock of the chosen item, the FSM would
 transition to Valid Selection state in which the COST output will be set with corresponding cost
 of the chosen item’s code. In the state, the machine will wait for VALID_TRAN signal.
+
 If VALID_TRAN is not set to 1 in 5 cycles, the machine would transition to Invalid Transaction
 state in which the machine would set FAILED-TRAN output to 1, and then it would transition to
 IDLE to wait for a new transaction.
+
 If the VALID_TRAN is set to 1 in less than 5 cycles, the machine would transition to Vend state
-in which the VEND output set to 1 and the stock of the corresponding item would decrement by
-1. In this state, the machine also wat for DOOR_OPEN to be set to 1 and then to be set to 0 to
+in which the VEND output set to 1 and the stock of the corresponding item would decrement by 1.
+
+In this state, the machine also wat for DOOR_OPEN to be set to 1 and then to be set to 0 to
 transition to IDLE state to wait for anew transaction. If the DOOR_OPEN is not set to 1 in 5 clock
 cycles the machine would transition to IDLE state.
+
 
 The Project report contains full description of the testbench simulation.
