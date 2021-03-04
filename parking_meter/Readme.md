@@ -39,3 +39,28 @@ corresponding to the digits being displayed.
 each)
 * (val1, val2, val3, val4): display the actual digit in BCD (binary coded
 decimal) corresponding to each of the segments.
+# Descriptions of states and transitions of parking meter FSM:
+
+Initially, the machine would begin at the initial state (state 4'b0000) in which the output will be
+flashing 0000 at 1HZ with 50% duty cycle. If the machine receives any coins, the corresponding
+time is added accordingly.
+
+If either rst1 or rst2 are set to 1, The machine will be set to the two other states (states 4'b0001
+and 4'b0010) in which in one sate the remaining will be set to 16 seconds and the other would
+be set to 150 seconds respectively. By counting the time down, the remaining time would be
+flashed at 0.5HZ since the time not equal to zero and it is less than 180 seconds.
+
+If one of the inputs add1, add2, add3, add4 is set to 1, The machine would move to the next
+state in which the corresponding time is added to the parking meter and continue decrementing
+the parking time by 1 (states 4'b0011, 4'b0100, 4'b0101, and 4'b0110). The display of the time
+would also be displayed in the same manner we displayed it earlier.
+
+If no coins are added. The machine would be in a state (state 4'b1000) in which the time is
+decremented by one, and the machine would check if the remaining time is equal to zero or less
+than 180 to display the remaining time with the correct frequency.
+
+When the time is below 180, the machine would transition to a state (state 4'b0111) in which the
+remaining time is decremented and flashed at 0.5HZ with 50% duty cycle. If any coin added, the
+state would move to the next state modeling the state of the corresponding add, and the display
+would be flashed accordingly. If the remaining time became 0 the machine would move to the
+initial state and the display would be flashed accordingly.
