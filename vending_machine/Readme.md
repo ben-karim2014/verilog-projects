@@ -1,4 +1,4 @@
-#1.Introduction:
+# 1.Introduction:
 The main idea behind of this project is for us to learn about how to design and implement a
 finite state machine that models a specified behavior and to use the Xilinx ISE software to
 design and test these state machines. Finite State Machines (FSMs) are a powerful tool that
