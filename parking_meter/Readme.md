@@ -8,7 +8,7 @@ number of ‘states’ and can be in any one of these states at a given time. Th
 FSM machines: Moore Machine and Mealy Machine. Moore machine is a FSM in which its
 output only depends on which state it is in, but a Mealy machine its output depends on both the
 current state and input.
-# Requirement:
+# Requirements:
 
 For this lab, we are required to design an FSM to model a parking meter which simulates coins
 being added and displays the appropriate time remaining. The time remaining will be displayed
