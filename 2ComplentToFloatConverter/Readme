@@ -7,4 +7,5 @@ To build this combinational circuit, I used the Xilinx ISE software to design an
 the circuit that converted a 13-bit two’s complement signed integer to its counterpart in
 9-bit floating point. The floating-point representation consists of a 1-bit sign
 representation, a 3-bit exponent, and a 5-bit significand, shown below:
+
 <img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/SharedScreenshot.jpg" width="600">
