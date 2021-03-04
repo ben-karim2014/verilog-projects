@@ -16,4 +16,4 @@ on a four-digit common anode seven-segment LED display on a Nexys3 board. Each o
 digits is composed of seven segments arranged in a pattern.
 
 vending Machine is designed to have the following inputs and outputs:
-<img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/basicio-img2.jpg" width="600">
+<img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/basicio-img2.png" width="600">
