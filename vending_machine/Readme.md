@@ -1,4 +1,5 @@
 # 1-Introduction:
+
 The main idea behind of this project is for us to learn about how to design and implement a
 finite state machine that models a specified behavior and to use the Xilinx ISE software to
 design and test these state machines. Finite State Machines (FSMs) are a powerful tool that
@@ -10,6 +11,7 @@ Moore Machine and Mealy Machine. Moore machine is a FSM in which its output only
 on which state it is in, but a Mealy machine its output depends on both the current state and
 input.
 # 2-Requirement:
+
 For this assignment, we're tasked with designing a vending machine with the following
 characteristics:
 1. Vending machine has 20 different snacks for sale. Each snack has two-digit code (00 to 19).
@@ -19,12 +21,15 @@ characteristics:
 ![alt text](https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending1.jpg?raw=true)
 
 # 3-Design Description:
+
 For this assignment, I designed my FSM following to the guidance of the lab description. The
 vending Machine is designed to have the following inputs and outputs:
 ![alt text](https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending2.jpg?raw=true)
-State Diagram:
+# 4-State Diagram:
+
 ![alt text](https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/states.jpg?raw=true)
-Descriptions of states and transitions:
+# 5-Descriptions of states and transitions:
+
 In the RESET state all item counters and outputs are set to 0. The FSM transition to this state
 whenever RST input is set to 1. When RST is set to 0 the FSM transition to IDLE state in which
 the machine will be waiting for a transaction to start.
