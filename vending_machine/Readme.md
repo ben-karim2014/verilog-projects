@@ -10,7 +10,7 @@ inputs it receives and the state that it is currently in. There are two kinds of
 Moore Machine and Mealy Machine. Moore machine is a FSM in which its output only depends
 on which state it is in, but a Mealy machine its output depends on both the current state and
 input.
-# 2-Requirement:
+# 2-Requirements:
 
 For this assignment, we're tasked with designing a vending machine with the following
 characteristics:
