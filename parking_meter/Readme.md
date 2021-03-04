@@ -17,3 +17,24 @@ digits is composed of seven segments arranged in a pattern.
 
 vending Machine is designed to have the following inputs and outputs:
 <img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/basicio-img2.png" width="600">
+
+Our FSM Machine should have the following specification:
+- The input buttons represent different coin denominations and the seven-segment LED
+display will display the time remaining before the meter expires in seconds:
+
+inputs:
+* add1: add 60 seconds
+* add2: add 120 seconds
+* add3: add 180 seconds
+* add4: add 300seconds
+* rsrt1 : reset time to 16 seconds
+* rst2 : reset time to 150 seconds
+* clk : frequency 100HZ
+* rst : reset to initial state
+Outputs: 
+* led_seg(7-bit vector): displays the actual value fed to the 4 segments
+corresponding to the digits being displayed.
+* a1,a2,a3,a4 : represents the anodes of the seven-segment display. (1 bit
+each)
+* (val1, val2, val3, val4): display the actual digit in BCD (binary coded
+decimal) corresponding to each of the segments.
