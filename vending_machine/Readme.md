@@ -65,7 +65,7 @@ IDLE to wait for a new transaction.
 If the VALID_TRAN is set to 1 in less than 5 cycles, the machine would transition to Vend state
 in which the VEND output set to 1 and the stock of the corresponding item would decrement by 1.
 
-In this state, the machine also wat for DOOR_OPEN to be set to 1 and then to be set to 0 to
+In this state, the machine also wait for DOOR_OPEN to be set to 1 and then to be set to 0 to
 transition to IDLE state to wait for anew transaction. If the DOOR_OPEN is not set to 1 in 5 clock
 cycles the machine would transition to IDLE state.
 
