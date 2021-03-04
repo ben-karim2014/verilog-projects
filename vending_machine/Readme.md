@@ -18,17 +18,17 @@ characteristics:
 2. Each snack is stored in separate slot. There can be up to 10 units of snack stored in 1 slot.
 3. A buyer can purchase only 1 item at a time.
 4. The machine only accepts payment by card.
-<img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending1.jpg" width="400">
+<img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending1.jpg" width="600">
 
 # 3-Design Description:
 
 For this assignment, I designed my FSM following to the guidance of the lab description. The
 vending Machine is designed to have the following inputs and outputs:
-<img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending2.jpg" width="400">
+<img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/vending2.jpg" width="600">
 # 4-State Diagram: 
 (I used 11 states to manage all the vending machine operations)
 
-<img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/states.jpg" width="400">
+<img src="https://raw.githubusercontent.com/ben-karim2014/verilog-projects/main/states.jpg" width="600">
 
 # 5-Descriptions of states and transitions:
 
