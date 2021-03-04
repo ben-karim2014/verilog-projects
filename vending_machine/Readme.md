@@ -1,4 +1,4 @@
-1-Introduction:
+#1.Introduction:
 The main idea behind of this project is for us to learn about how to design and implement a
 finite state machine that models a specified behavior and to use the Xilinx ISE software to
 design and test these state machines. Finite State Machines (FSMs) are a powerful tool that
@@ -54,4 +54,5 @@ in which the VEND output set to 1 and the stock of the corresponding item would 
 1. In this state, the machine also wat for DOOR_OPEN to be set to 1 and then to be set to 0 to
 transition to IDLE state to wait for anew transaction. If the DOOR_OPEN is not set to 1 in 5 clock
 cycles the machine would transition to IDLE state.
+
 The Project report contains full description of the testbench simulation.
